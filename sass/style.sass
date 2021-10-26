@@ -1,0 +1,290 @@
+@use 'variables'
+
+*
+    margin: 0
+    padding: 0
+
+html
+    scroll-behavior: smooth
+
+body
+    width: 100%
+    background-color: variables.$background-color1
+    font-family: Arial, Helvetica, sans-serif
+
+#sectionMenu
+    height: 4vw
+    width: 100vw
+    max-width:100%
+    border-bottom: 0.5px solid
+    border-bottom-color: rgba(98, 101, 165, 1)
+    background-color: variables.$background-color1
+    display: flexbox
+    align-items: center
+    @media (max-width: variables.$breakpoint-tablet) 
+        height: 8vw
+    @media (max-width: variables.$breakpoint-cell)
+        height: 15vw
+
+    span
+        font-size: 3vw
+        color: #ffffff
+        margin: 0.5% 1.5%
+        -webkit-user-select: none  
+        -moz-user-select: none     
+        -ms-user-select: none  
+        user-select: none
+        cursor: pointer
+        @media (max-width: variables.$breakpoint-tablet) 
+            font-size: 6.5vw  
+        @media (max-width: variables.$breakpoint-cell)
+            font-size: 15vw
+
+#optionsMenu
+    position: absolute
+    z-index: 100
+    display: none
+
+    ul
+        list-style: none
+        li
+            display: flex
+            justify-content: center
+            text-align: center
+            margin: 1vw
+            padding: 1vw 3vw
+            border-radius: 40px
+            background-color: variables.$background-color2
+            @media (max-width: variables.$breakpoint-cell)
+                padding: 2vw 5vw
+                margin: 2vw
+
+            a
+                text-decoration: none
+                font-size: 1.5vw
+                color: white
+                @media (max-width: variables.$breakpoint-tablet)
+                    font-size: 2vw
+                @media (max-width: variables.$breakpoint-cell)
+                    font-size: 3vw
+
+#section1
+    width: 100vw
+    height: 50vw
+    max-width:100%
+    display: flex
+    flex-direction: row-reverse
+    justify-content: center
+    align-items: center
+    @media (max-width: variables.$breakpoint-tablet)
+        height: 65vw
+    @media (max-width: variables.$breakpoint-cell)
+        height: 115vw
+        display: block
+
+    &-text
+        height: 15vw
+        @media (max-width: variables.$breakpoint-tablet)
+            height: 20vw
+        @media (max-width: variables.$breakpoint-cell)
+            width: 70vw
+            margin: 2% 0 0 15%
+
+        h1
+            color: variables.$primary-color
+            font-size: 5vw
+            @media (max-width: variables.$breakpoint-tablet)
+                font-size: 7vw
+            @media (max-width: variables.$breakpoint-cell)
+                font-size: 9vw
+
+        h2
+            font-size: 2.5vw
+            color: #ffffff
+            @media (max-width: variables.$breakpoint-tablet)
+                font-size: 3vw
+            @media (max-width: variables.$breakpoint-cell)
+                font-size: 5vw
+        h3
+            font-size: 1.5vw
+            color: #ffffff
+            @media (max-width: variables.$breakpoint-tablet)
+                font-size: 2vw
+            @media (max-width: variables.$breakpoint-cell)
+                font-size: 3.5vw
+
+        a
+            button
+                font-size: 1.5vw
+                border: 0.2vw solid
+                border-color: variables.$primary-color
+                border-radius: 50px
+                color: white
+                background-color: variables.$background-color1
+                padding: 1.2% 5%
+                margin: 1% 0
+
+                -webkit-user-select: none  
+                -moz-user-select: none     
+                -ms-user-select: none  
+                user-select: none
+                cursor: pointer
+                @media (max-width: variables.$breakpoint-tablet)
+                    font-size: 2.5vw
+                    margin: 2% 0
+                @media (max-width: variables.$breakpoint-cell)
+                    font-size: 4vw
+                    border-width: 0.6vw
+                    margin: 3% 0
+
+            button:hover
+                background-color: variables.$primary-color
+
+    &-svg
+        svg
+            @media (max-width: variables.$breakpoint-cell)
+                width: 75vw
+                height: 55vw
+                margin: 7% 0 0 10%
+
+#section2
+    background-color: variables.$background-color2
+    width: 100vw
+    height: 40vw
+    max-width: 100%
+    @media (max-width: variables.$breakpoint-tablet)
+        height: 45vw
+    @media (max-width: variables.$breakpoint-cell)
+        height: 70vw
+
+    h1
+        font-size: 2vw
+        color: white
+        text-align: center
+        padding: 5vw
+        @media (max-width: variables.$breakpoint-tablet)
+            font-size: 3vw
+        @media (max-width: variables.$breakpoint-cell)
+            font-size: 5vw
+            margin: 3% 0
+    
+    &-div
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+        display: grid
+        grid-template-columns: 5vw 5vw 5vw
+        grid-template-rows: 10vw 10vw
+        grid-gap: 3vw 10vw   
+        @media (max-width: variables.$breakpoint-tablet)
+            grid-template-columns: 7vw 7vw 7vw
+        @media (max-width: variables.$breakpoint-cell)
+            grid-template-columns: 12vw 12vw 12vw
+            grid-template-rows: 15vw 15vw
+            grid-gap: 5vw 15vw 
+        p
+            color: white
+            font-size: 1.5vw
+            font-weight: bold
+            text-align: center
+            @media (max-width: variables.$breakpoint-tablet)
+                font-size: 2.5vw
+            @media (max-width: variables.$breakpoint-cell)
+                font-size: 3vw
+
+.skillDominada
+    svg
+        @media (max-width: variables.$breakpoint-tablet)
+            height: 7vw
+            width: 7vw
+        @media (max-width: variables.$breakpoint-cell)
+            height: 12vw
+            width: 12vw
+
+#section3
+    width: 100vw
+    height: 50vw
+    max-width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    @media (max-width: variables.$breakpoint-cell)
+        height: 60vw
+    
+
+    &-div1
+        width: 25vw
+        height: 27vw
+        border-radius: 20px
+        background-color: rgba(255, 255, 255, 0.65)
+        @media (max-width: variables.$breakpoint-tablet)
+            width: 35vw
+            height: 37vw
+
+    
+    &-div2
+        width: 40vw
+        height: 27vw
+        margin: 1vw
+        @media (max-width: variables.$breakpoint-tablet)
+            height: 37vw
+        @media (max-width: variables.$breakpoint-cell)
+            width: 55vw
+
+        &-partSuperior
+            margin-bottom: 2vw
+
+            h2
+                color: white
+                font-size: 3vw
+                font-weight: bold
+                margin-bottom: 1vw
+                @media (max-width: variables.$breakpoint-tablet)
+                    font-size: 4vw
+                @media (max-width: variables.$breakpoint-cell)
+                    font-size: 5vw
+                    margin-bottom: 0.5vw
+
+            p
+                color: white
+                font-size: 1.5vw
+                @media (max-width: variables.$breakpoint-tablet)
+                    font-size: 2vw
+                @media (max-width: variables.$breakpoint-cell)
+                    font-size: 3vw
+
+        &-partInferior
+            display: grid
+            grid-template-columns: 20vw 20vw
+            grid-template-rows: 5vw 5vw
+            grid-gap: 0.5vw 3vw
+            @media (max-width: variables.$breakpoint-tablet)
+                grid-template-columns: 23vw 23vw
+                grid-template-rows: 6vw 6vw
+                grid-gap: 3vw 3vw
+            @media (max-width: variables.$breakpoint-cell)
+                grid-template-columns: 27vw 23vw
+                grid-template-rows: 6vw 6vw
+                grid-gap: 3vw 3vw
+
+            h3
+                color: variables.$primary-color
+                font-size: 2vw
+                font-weight: bold
+                margin-bottom: 0.5vw
+                @media (max-width: variables.$breakpoint-tablet)
+                    font-size: 3vw
+                @media (max-width: variables.$breakpoint-cell)
+                    font-size: 3.5
+                
+
+            p
+                color: white
+                font-size: 1.5vw
+                margin-bottom: 1.5vw
+                @media (max-width: variables.$breakpoint-tablet)
+                    font-size: 2vw
+                @media (max-width: variables.$breakpoint-cell)
+                    font-size: 2.5vw
