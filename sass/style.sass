@@ -147,8 +147,127 @@ body
                 height: 55vw
                 margin: 7% 0 0 10%
 
+
 #section2
     background-color: variables.$background-color2
+    @media (max-width: variables.$breakpoint-cell)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 75vw
+    &-partSuperior
+        width: 100vw
+        height: 50vw
+        max-width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        @media (max-width: variables.$breakpoint-cell)
+            height: 40vw
+            margin-bottom: 3vw
+        
+
+        &-div1
+            width: 25vw
+            height: 27vw
+            border-radius: 20px
+            background-color: rgba(255, 255, 255, 0.65)
+            @media (max-width: variables.$breakpoint-tablet)
+                width: 35vw
+                height: 37vw
+
+        
+        &-div2
+            width: 40vw
+            height: 27vw
+            margin: 1vw
+            @media (max-width: variables.$breakpoint-tablet)
+                height: 37vw
+
+            &-partSuperior
+                margin-bottom: 2vw
+
+                h2
+                    color: white
+                    font-size: 3vw
+                    font-weight: bold
+                    margin-bottom: 1vw
+                    @media (max-width: variables.$breakpoint-tablet)
+                        font-size: 4vw
+                    @media (max-width: variables.$breakpoint-cell)
+                        font-size: 4.5vw
+                        margin-bottom: 0.5vw
+
+                p
+                    color: white
+                    font-size: 1.5vw
+                    @media (max-width: variables.$breakpoint-tablet)
+                        font-size: 2vw
+                    @media (max-width: variables.$breakpoint-cell)
+                        font-size: 2.5vw
+
+            &-partInferior
+                display: grid
+                grid-template-columns: 20vw 20vw
+                grid-template-rows: 5vw 5vw
+                grid-gap: 0.5vw 3vw
+                @media (max-width: variables.$breakpoint-tablet)
+                    grid-template-columns: 23vw 23vw
+                    grid-template-rows: 6vw 6vw
+                    grid-gap: 3vw 3vw
+                @media (max-width: variables.$breakpoint-cell)
+                    display: none
+
+                h3
+                    color: variables.$primary-color
+                    font-size: 2vw
+                    font-weight: bold
+                    margin-bottom: 0.5vw
+                    @media (max-width: variables.$breakpoint-tablet)
+                        font-size: 3vw
+                    @media (max-width: variables.$breakpoint-cell)
+                        font-size: 3.5
+                    
+
+                p
+                    color: white
+                    font-size: 1.5vw
+                    margin-bottom: 1.5vw
+                    @media (max-width: variables.$breakpoint-tablet)
+                        font-size: 2vw
+                    @media (max-width: variables.$breakpoint-cell)
+                        font-size: 2.5vw
+
+#section2-partInferior
+    display: none
+    @media (max-width: variables.$breakpoint-cell)
+        height: 20vw
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+
+        &-Mobile
+            margin-bottom: 5vw
+            display: grid
+            grid-template-columns: 35vw 35vw
+            grid-template-rows: 5vw 5vw
+            grid-gap: 6vw 5vw
+    
+            h3
+                color: variables.$primary-color
+                font-size: 4vw
+                font-weight: bold
+                margin-bottom: 0.3vw
+
+            p
+                color: white
+                font-size: 2.5vw
+                margin-bottom: 1.5vw
+
+#section3
     width: 100vw
     height: 40vw
     max-width: 100%
@@ -201,90 +320,3 @@ body
         @media (max-width: variables.$breakpoint-cell)
             height: 12vw
             width: 12vw
-
-#section3
-    width: 100vw
-    height: 50vw
-    max-width: 100%
-    display: flex
-    flex-direction: row
-    justify-content: center
-    align-items: center
-    @media (max-width: variables.$breakpoint-cell)
-        height: 60vw
-    
-
-    &-div1
-        width: 25vw
-        height: 27vw
-        border-radius: 20px
-        background-color: rgba(255, 255, 255, 0.65)
-        @media (max-width: variables.$breakpoint-tablet)
-            width: 35vw
-            height: 37vw
-
-    
-    &-div2
-        width: 40vw
-        height: 27vw
-        margin: 1vw
-        @media (max-width: variables.$breakpoint-tablet)
-            height: 37vw
-        @media (max-width: variables.$breakpoint-cell)
-            width: 55vw
-
-        &-partSuperior
-            margin-bottom: 2vw
-
-            h2
-                color: white
-                font-size: 3vw
-                font-weight: bold
-                margin-bottom: 1vw
-                @media (max-width: variables.$breakpoint-tablet)
-                    font-size: 4vw
-                @media (max-width: variables.$breakpoint-cell)
-                    font-size: 5vw
-                    margin-bottom: 0.5vw
-
-            p
-                color: white
-                font-size: 1.5vw
-                @media (max-width: variables.$breakpoint-tablet)
-                    font-size: 2vw
-                @media (max-width: variables.$breakpoint-cell)
-                    font-size: 3vw
-
-        &-partInferior
-            display: grid
-            grid-template-columns: 20vw 20vw
-            grid-template-rows: 5vw 5vw
-            grid-gap: 0.5vw 3vw
-            @media (max-width: variables.$breakpoint-tablet)
-                grid-template-columns: 23vw 23vw
-                grid-template-rows: 6vw 6vw
-                grid-gap: 3vw 3vw
-            @media (max-width: variables.$breakpoint-cell)
-                grid-template-columns: 27vw 23vw
-                grid-template-rows: 6vw 6vw
-                grid-gap: 3vw 3vw
-
-            h3
-                color: variables.$primary-color
-                font-size: 2vw
-                font-weight: bold
-                margin-bottom: 0.5vw
-                @media (max-width: variables.$breakpoint-tablet)
-                    font-size: 3vw
-                @media (max-width: variables.$breakpoint-cell)
-                    font-size: 3.5
-                
-
-            p
-                color: white
-                font-size: 1.5vw
-                margin-bottom: 1.5vw
-                @media (max-width: variables.$breakpoint-tablet)
-                    font-size: 2vw
-                @media (max-width: variables.$breakpoint-cell)
-                    font-size: 2.5vw
