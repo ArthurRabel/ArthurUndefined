@@ -30,6 +30,7 @@ body
         font-size: 3vw
         color: #ffffff
         margin: 0.5% 1.5%
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
         -webkit-user-select: none  
         -moz-user-select: none     
         -ms-user-select: none  
@@ -40,6 +41,9 @@ body
         @media (max-width: variables.$breakpoint-cell)
             font-size: 15vw
 
+    span:hover
+        color: variables.$primary-color
+
 #optionsMenu
     position: absolute
     z-index: 100
@@ -47,6 +51,7 @@ body
 
     ul
         list-style: none
+
         li
             display: flex
             justify-content: center
@@ -60,13 +65,14 @@ body
                 margin: 2vw
 
             a
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
                 text-decoration: none
                 font-size: 1.5vw
                 color: white
                 @media (max-width: variables.$breakpoint-tablet)
                     font-size: 2vw
                 @media (max-width: variables.$breakpoint-cell)
-                    font-size: 3vw
+                    font-size: 3vw        
 
 #section1
     width: 100vw
@@ -79,7 +85,7 @@ body
     @media (max-width: variables.$breakpoint-tablet)
         height: 65vw
     @media (max-width: variables.$breakpoint-cell)
-        height: 115vw
+        height: 125vw
         display: block
 
     &-text
@@ -114,6 +120,7 @@ body
                 font-size: 3.5vw
 
         a
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
             button
                 font-size: 1.5vw
                 border: 0.2vw solid
@@ -123,6 +130,7 @@ body
                 background-color: variables.$background-color1
                 padding: 1.2% 5%
                 margin: 1% 0
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
                 -webkit-user-select: none  
                 -moz-user-select: none     
@@ -145,7 +153,7 @@ body
             @media (max-width: variables.$breakpoint-cell)
                 width: 75vw
                 height: 55vw
-                margin: 7% 0 0 10%
+                margin: 7% 0 8% 10%
 
 
 #section2
@@ -155,7 +163,7 @@ body
         flex-direction: column
         justify-content: center
         align-items: center
-        height: 75vw
+        height: 80vw
     &-partSuperior
         width: 100vw
         height: 50vw
@@ -173,6 +181,7 @@ body
             width: 25vw
             height: 27vw
             border-radius: 20px
+            margin-right: 2vw
             background-color: rgba(255, 255, 255, 0.65)
             @media (max-width: variables.$breakpoint-tablet)
                 width: 35vw
