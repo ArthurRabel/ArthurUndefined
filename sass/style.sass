@@ -1,4 +1,5 @@
 @use 'variables'
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Zen+Maru+Gothic:wght@300;400&display=swap')
 
 *
     margin: 0
@@ -11,6 +12,12 @@ body
     width: 100%
     background-color: variables.$background-color1
     font-family: Arial, Helvetica, sans-serif
+
+h1
+    font-family: 'Roboto', sans-serif
+
+h2, h3, p
+    font-family: 'Zen Maru Gothic', sans-serif
 
 #sectionMenu
     height: 4vw
@@ -122,6 +129,7 @@ body
         a
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
             button
+                font-family: 'Zen Maru Gothic', sans-serif
                 font-size: 1.5vw
                 border: 0.2vw solid
                 border-color: variables.$primary-color
@@ -212,6 +220,7 @@ body
                 p
                     color: white
                     font-size: 1.5vw
+                    font-family: 'Zen Maru Gothic', sans-serif
                     @media (max-width: variables.$breakpoint-tablet)
                         font-size: 2vw
                     @media (max-width: variables.$breakpoint-cell)
@@ -221,10 +230,10 @@ body
                 display: grid
                 grid-template-columns: 20vw 20vw
                 grid-template-rows: 5vw 5vw
-                grid-gap: 0.5vw 3vw
+                grid-gap: 1.5vw 3vw
                 @media (max-width: variables.$breakpoint-tablet)
                     grid-template-columns: 23vw 23vw
-                    grid-template-rows: 6vw 6vw
+                    grid-template-rows: 7vw 7vw
                     grid-gap: 3vw 3vw
                 @media (max-width: variables.$breakpoint-cell)
                     display: none
@@ -233,17 +242,16 @@ body
                     color: variables.$primary-color
                     font-size: 2vw
                     font-weight: bold
-                    margin-bottom: 0.5vw
                     @media (max-width: variables.$breakpoint-tablet)
-                        font-size: 3vw
+                        font-size: 2.5vw
                     @media (max-width: variables.$breakpoint-cell)
-                        font-size: 3.5
+                        font-size: 3vw
                     
 
                 p
                     color: white
                     font-size: 1.5vw
-                    margin-bottom: 1.5vw
+                    margin-bottom: 1.7vw
                     @media (max-width: variables.$breakpoint-tablet)
                         font-size: 2vw
                     @media (max-width: variables.$breakpoint-cell)
@@ -252,7 +260,7 @@ body
 #section2-partInferior
     display: none
     @media (max-width: variables.$breakpoint-cell)
-        height: 20vw
+        height: 30vw
         display: flex
         flex-direction: row
         justify-content: center
@@ -262,18 +270,18 @@ body
             margin-bottom: 5vw
             display: grid
             grid-template-columns: 35vw 35vw
-            grid-template-rows: 5vw 5vw
+            grid-template-rows: 10vw 10vw
             grid-gap: 6vw 5vw
     
             h3
                 color: variables.$primary-color
-                font-size: 4vw
+                font-size: 3.5vw
                 font-weight: bold
-                margin-bottom: 0.3vw
+                margin-bottom: 0.1vw
 
             p
                 color: white
-                font-size: 2.5vw
+                font-size: 3vw
                 margin-bottom: 1.5vw
 
 #section3
