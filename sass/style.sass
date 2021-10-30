@@ -224,7 +224,7 @@ h2, h3, p
                     @media (max-width: variables.$breakpoint-tablet)
                         font-size: 2vw
                     @media (max-width: variables.$breakpoint-cell)
-                        font-size: 2.5vw
+                        font-size: 3vw
 
             &-partInferior
                 display: grid
@@ -244,9 +244,6 @@ h2, h3, p
                     font-weight: bold
                     @media (max-width: variables.$breakpoint-tablet)
                         font-size: 2.5vw
-                    @media (max-width: variables.$breakpoint-cell)
-                        font-size: 3vw
-                    
 
                 p
                     color: white
@@ -254,11 +251,10 @@ h2, h3, p
                     margin-bottom: 1.7vw
                     @media (max-width: variables.$breakpoint-tablet)
                         font-size: 2vw
-                    @media (max-width: variables.$breakpoint-cell)
-                        font-size: 2.5vw
 
 #section2-partInferior
     display: none
+    margin-top: 3vw
     @media (max-width: variables.$breakpoint-cell)
         height: 30vw
         display: flex
@@ -297,7 +293,7 @@ h2, h3, p
         font-size: 2vw
         color: white
         text-align: center
-        padding: 5vw
+        padding: 5vw 5vw 3vw 5vw
         @media (max-width: variables.$breakpoint-tablet)
             font-size: 3vw
         @media (max-width: variables.$breakpoint-cell)
@@ -310,30 +306,52 @@ h2, h3, p
         justify-content: center
 
         display: grid
-        grid-template-columns: 5vw 5vw 5vw
+        grid-template-columns: 9vw 9vw 9vw
         grid-template-rows: 10vw 10vw
-        grid-gap: 3vw 10vw   
+        grid-gap: 3vw 5vw   
         @media (max-width: variables.$breakpoint-tablet)
-            grid-template-columns: 7vw 7vw 7vw
+            grid-template-columns: 10vw 10vw 10vw
+            grid-template-rows: 12vw 12vw
+            grid-gap: 3vw 5vw 
         @media (max-width: variables.$breakpoint-cell)
-            grid-template-columns: 12vw 12vw 12vw
-            grid-template-rows: 15vw 15vw
-            grid-gap: 5vw 15vw 
+            grid-template-columns: 15vw 15vw 15vw
+            grid-template-rows: 19vw 19vw
+            grid-gap: 4vw 5vw 
+        .skillDominada
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            background-color: variables.$background-color2
+            border-radius: 3px
+                
+            svg
+                @media (max-width: variables.$breakpoint-tablet)
+                    height: 7vw
+                    width: 7vw
+                @media (max-width: variables.$breakpoint-cell)
+                    height: 12vw
+                    width: 12vw
+
         p
             color: white
-            font-size: 1.5vw
-            font-weight: bold
+            font-size: 1.3vw
             text-align: center
+            margin-top: 0.5vw
             @media (max-width: variables.$breakpoint-tablet)
-                font-size: 2.5vw
+                margin-top: 0.3vw
+                font-size: 2vw
             @media (max-width: variables.$breakpoint-cell)
-                font-size: 3vw
+                font-size: 2.5vw
 
-.skillDominada
-    svg
-        @media (max-width: variables.$breakpoint-tablet)
-            height: 7vw
-            width: 7vw
-        @media (max-width: variables.$breakpoint-cell)
-            height: 12vw
-            width: 12vw
+footer
+    color: #babbc9
+    width: 100vw
+    height: 3.5vw
+    font-size: 1.1vw
+    max-width: 100%
+    background-color: variables.$background-color2
+    display: flex
+    justify-content: center
+    align-items: center
+    
