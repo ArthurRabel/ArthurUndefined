@@ -194,7 +194,7 @@ h2, h3, p {
   border-radius: 50px;
   color: white;
   background-color: #050732;
-  padding: 1.2% 5%;
+  padding: 0 5% 1.2% 5%;
   margin: 1% 0;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none;
