@@ -19,68 +19,6 @@ h1
 h2, h3, p
     font-family: 'Zen Maru Gothic', sans-serif
 
-#sectionMenu
-    height: 4vw
-    width: 100vw
-    max-width:100%
-    border-bottom: 0.5px solid
-    border-bottom-color: rgba(98, 101, 165, 1)
-    background-color: variables.$background-color1
-    display: flexbox
-    align-items: center
-    @media (max-width: variables.$breakpoint-tablet) 
-        height: 8vw
-    @media (max-width: variables.$breakpoint-cell)
-        height: 15vw
-
-    span
-        font-size: 3vw
-        color: #ffffff
-        margin: 0.5% 1.5%
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-        -webkit-user-select: none  
-        -moz-user-select: none     
-        -ms-user-select: none  
-        user-select: none
-        cursor: pointer
-        @media (max-width: variables.$breakpoint-tablet) 
-            font-size: 6.5vw  
-        @media (max-width: variables.$breakpoint-cell)
-            font-size: 15vw
-
-    span:hover
-        color: variables.$primary-color
-
-#optionsMenu
-    position: absolute
-    z-index: 100
-    display: none
-
-    ul
-        list-style: none
-
-        li
-            display: flex
-            justify-content: center
-            text-align: center
-            margin: 1vw
-            padding: 1vw 3vw
-            border-radius: 40px
-            background-color: variables.$background-color2
-            @media (max-width: variables.$breakpoint-cell)
-                padding: 2vw 5vw
-                margin: 2vw
-
-            a
-                -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-                text-decoration: none
-                font-size: 1.5vw
-                color: white
-                @media (max-width: variables.$breakpoint-tablet)
-                    font-size: 2vw
-                @media (max-width: variables.$breakpoint-cell)
-                    font-size: 3vw        
-
 #section1
     width: 100vw
     height: 50vw
@@ -283,7 +221,7 @@ h2, h3, p
 
 #section3
     width: 100vw
-    height: 40vw
+    height: 45vw
     max-width: 100%
     @media (max-width: variables.$breakpoint-tablet)
         height: 45vw
@@ -348,11 +286,12 @@ h2, h3, p
 footer
     color: #babbc9
     width: 100vw
-    height: 3.5vw
-    font-size: 1.1vw
     max-width: 100%
     background-color: variables.$background-color2
     display: flex
     justify-content: center
     align-items: center
     
+    span
+        padding: calc(1vw + 8px)
+        font-size: calc(1vw + 8px)
