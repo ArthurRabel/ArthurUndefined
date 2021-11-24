@@ -24,7 +24,7 @@ const Cursos = [
         'Skill6' : '-Logica de programação',
         'Skill7' : '-Segurança da Informação',
         'Skill8' : '-Web Designer',
-        'Image' : 'img/matricula.png'
+        'Image' : '../img/matricula.png'
     },
     {
         'Organizacao': 'Udemy',
