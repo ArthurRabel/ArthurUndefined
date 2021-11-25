@@ -38,7 +38,7 @@ const Cursos = [
         'Skill6' : '-Design Patterns',
         'Skill7' : '-HTML5 e CSS3 ',
         'Skill8' : '',
-        'Image' : '../public/Image Error.png',
+        'Image' : '../public/error.png',
     }
 ]
 document.addEventListener("DOMContentLoaded", function(event) {
