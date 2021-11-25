@@ -24,7 +24,7 @@ const Cursos = [
         'Skill6' : '-Logica de programação',
         'Skill7' : '-Segurança da Informação',
         'Skill8' : '-Web Designer',
-        'Image' : '../img/matricula.png'
+        'Image' : '../public/matricula.png'
     },
     {
         'Organizacao': 'Udemy',
@@ -38,7 +38,7 @@ const Cursos = [
         'Skill6' : '-Design Patterns',
         'Skill7' : '-HTML5 e CSS3 ',
         'Skill8' : '',
-        'Image' : '../img/Image Error.png',
+        'Image' : '../public/Image Error.png',
     }
 ]
 document.addEventListener("DOMContentLoaded", function(event) {
