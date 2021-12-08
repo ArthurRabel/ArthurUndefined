@@ -126,4 +126,18 @@ h2, h3, p {
   }
 }
 
+footer {
+  color: #babbc9;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #0e1046;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer span {
+  padding: calc(1vw + 8px);
+  font-size: calc(1vw + 8px);
+}
+
 /*# sourceMappingURL=menu.css.map */
